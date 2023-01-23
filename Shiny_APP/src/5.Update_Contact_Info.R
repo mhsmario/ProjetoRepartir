@@ -20,8 +20,8 @@ library(googlesheets4)
 library(stringr)
 
 ##1. Obter os dados das abas 2.2 e da planilha "Contatos_Beneficiarios" do google sheets ----
-Master_Triagem <- "1JnO_oiTZNMxNepwwbmxV2LZA_ZvbVwW9iWfyZH8JBws"
-Contatos <- "1VgkycSo2GUqICQikhvOAj5rG2sy7qs1yWk_8pioLS4c"
+Master_Triagem <- "[Sheet_id omitted]"
+Contatos <- "[Sheet_id omitted]"
 
 triagem <- range_read(Master_Triagem, sheet = 2)
 contacts <- range_read(Contatos, sheet = 1)
