@@ -14,7 +14,7 @@ library(googlesheets4)
 library(here)
 library(lubridate)
 
-logistica_sheet <- "1vEQUpXUj48nV1zBYPc4S165hkaDBpiSbOWaBvt89ieo"
+logistica_sheet <- "[Sheet_id omitted]"
 
 routes <- range_read(logistica_sheet, sheet = "3.4.Routes")
 #routes <- range_read(logistica_sheet, sheet = "3.2.Preencher")
