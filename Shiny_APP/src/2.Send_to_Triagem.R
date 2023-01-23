@@ -16,8 +16,8 @@ rm(list = ls()) #Clear workspace
 
 ###IDs de cada planilha. 
 #### --> Note que as abas não tem um ID especifico, apenas a planilha tem.
-Master <- "1JnO_oiTZNMxNepwwbmxV2LZA_ZvbVwW9iWfyZH8JBws"
-Respostas <- "1GY2UKauV07TkhAmOPRYL_7xFXGVVEQll-SIGWDt-jP4"
+Master <- "[Sheet_id omitted]"
+Respostas <- "[Sheet_id omitted]"
 
 #### --> Note que especificamos a aba que queremos usando 'sheet = [] '
 respostas <- range_read(Respostas, sheet = 1)
