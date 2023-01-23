@@ -12,17 +12,14 @@ library(formattable)
 library(tidyr)
 library(googlesheets4) 
 
-#set_here(path = "/Users/mariosaraiva/Documents/IIR.NG/COVID19", verbose = TRUE) #Use Relative paths!
-#setwd("/Users/mariosaraiva/Documents/IIR.NG/COVID19/src/")
-#setwd(here::here())
 
 ##1. Obter os dados da aba 3.2 e planilha Cestas.Entregues do google sheets ----
 
 
-Central_entregues <- "1K31UMqlfcB2YTekvpq2rxuDq5S5q0aUusd5-k26zumw"
+Central_entregues <- "[Sheet_id omitted]"
 central <- range_read(Central_entregues, sheet = "Dados_ONA")
 
-tableau_map <- "1lqvDOi52sCjDATY4LWyPjXpxtkpR_rlwVZsjnbws8qU"
+tableau_map <- "[Sheet_id omitted]"
 map <- range_read(tableau_map, sheet = "Map")
 
 ##2. Create dataframe
