@@ -11,7 +11,7 @@ library(tidyr)
 library(googlesheets4) 
 
 ##1. Obter os dados da planilha 2 do google sheets ----
-Master <- "1JnO_oiTZNMxNepwwbmxV2LZA_ZvbVwW9iWfyZH8JBws"
+Master <- "[Sheet_id omitted]"
 
 #### --> Note que especificamos a aba que queremos usando 'sheet = [] '
 triagem <- range_read(Master, sheet = "2.2.Triagem")
