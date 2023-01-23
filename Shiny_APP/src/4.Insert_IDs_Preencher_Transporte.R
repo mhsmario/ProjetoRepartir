@@ -16,7 +16,7 @@ library(googlesheets4)
 
 ##1. Obter os dados das abas 3.1 e 3.2 do google sheets ----
 
-transporte_sheet <- "1vEQUpXUj48nV1zBYPc4S165hkaDBpiSbOWaBvt89ieo" #Sheet 3. Logistica
+transporte_sheet <- "[Sheet_id omitted]" #Sheet 3. Logistica
 
 transporte <- range_read(transporte_sheet, sheet = "3.1.Main.Transporte")
 preencher <- range_read(transporte_sheet, sheet = "3.2.Preencher")
