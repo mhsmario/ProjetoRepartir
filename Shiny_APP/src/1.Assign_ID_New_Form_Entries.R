@@ -13,10 +13,10 @@ library(googlesheets4)
 
  ## --> Esse aqui é o ID da planilha que recebe as respostas do formulário. 
  ## --> O ID sempre está no final do URL da planilha. Por exemplo, no URL:
- ## --> https://docs.google.com/spreadsheets/u/4/d/1QVX6E2c47wSE4prd1Vsiu7dV0YGmwksOtXQJuqKAdWI/edit?usp=drive_web&ouid=101894962937210078853
+ ## --> https://docs.google.com/spreadsheets/u/4/d/1QVX6E2c47wSE4prd1Vsiu7dV0YGdWI/edit?usp=drive_web&ouid=10189493
  ## --> O ID está depois do "https://docs.google.com/spreadsheets/u/4/d/"
 
-Respostas <- "1GY2UKauV07TkhAmOPRYL_7xFXGVVEQll-SIGWDt-jP4"
+Respostas <- "[Sheet_ID]"
 
 form_replies <- range_read(Respostas, sheet = 1)
 
