@@ -24,7 +24,7 @@ library(here)
 rm(list = ls())
 
 ##1. Obter os dados da aba "3.4.Routes" do google sheets ----
-logistica_sheet <- "1vEQUpXUj48nV1zBYPc4S165hkaDBpiSbOWaBvt89ieo" #fase 5
+logistica_sheet <- "[Sheet_id omitted]" #fase 5
 routes <- range_read(logistica_sheet, sheet = "3.4.Routes")
 
 routes$Região <- gsub(" ", "_", routes$Região)
