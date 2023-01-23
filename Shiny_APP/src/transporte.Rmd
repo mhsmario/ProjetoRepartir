@@ -1,0 +1,46 @@
+---
+title: "IIR Brasil - Driver's Sheet"
+output:
+   prettydoc::html_pretty:
+    theme: architect
+    df_print: kable
+---
+
+```{r set-options, echo=FALSE, cache=FALSE}
+options(width = 1500)
+
+```
+
+#Entrega de Cestas - `r format(Sys.time(), '%d/%m/%Y')`
+
+Informações (IDs, endereços, links e etc) para a entrega.
+
+>> Líder: Samuel Almeida 
+>> 61-98162-1909
+
+Lembrando:
+
+
+>- **A cada entrega, por favor, preencha o  [formulário de entrega](https://enketo.ona.io/x/84wuXLNt)**.
+
+>- Segurança - Se em algum momento se sentir inseguro vá embora.
+
+>- As vezes é dificil, mas respeite o número de cestas por família.
+
+>- Tenha certeza que você tem o número certo de cestas no carro. 
+
+>- **Jesus ama essas pessoas e o evangelho do Reino é poderoso**.
+
+***
+```{r message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+df_subgroup <- as.data.frame(subgroup[1])
+df_subgroup_sum <- as.data.frame(df_subgroup[8])
+```
+
+##Total de cestas: _`r sum(df_subgroup_sum)`_   
+
+
+```{r HTML, echo=FALSE}
+kable(subgroup)
+```
+
