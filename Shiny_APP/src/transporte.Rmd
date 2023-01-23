@@ -15,8 +15,8 @@ options(width = 1500)
 
 Informações (IDs, endereços, links e etc) para a entrega.
 
->> Líder: Samuel Almeida 
->> 61-98162-1909
+>> Líder: Samuel  
+>> 61-9[....]-[....]
 
 Lembrando:
 
