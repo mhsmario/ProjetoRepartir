@@ -21,13 +21,13 @@ library(keyring)
 
 ##1. Obter os dados da aba 2.2 e da planilha "Dados_ONA" do google sheets ----
 
-Central_entregues <- "1K31UMqlfcB2YTekvpq2rxuDq5S5q0aUusd5-k26zumw"
+Central_entregues <- "[Sheet_id omitted]"
 central <- range_read(Central_entregues, sheet = "Dados_ONA")
 
-Master <- "1JnO_oiTZNMxNepwwbmxV2LZA_ZvbVwW9iWfyZH8JBws"
+Master <- "[Sheet_id omitted]"
 Triagem <- range_read(Master, sheet = "2.2.Triagem")
 
-Logistics <- "1vEQUpXUj48nV1zBYPc4S165hkaDBpiSbOWaBvt89ieo"
+Logistics <- "[Sheet_id omitted]"
 
 fase_do_repartir <- 5
 
@@ -35,19 +35,15 @@ fase_do_repartir <- 5
 
 ## --> Coloca as informações de login do ONA
 
-# form_id <- "form_phaseIII"
-# account <- "s.mario@columbia.edu"
-# username <- "smario"
-
 form_id <- "Repartir_form_phaseV"
-account <- "iirbrasilsocial@gmail.com"
-username <- "iirbrasil"
+account <- "[mitted]"
+username <- "[omitted]"
 ## --> O passo a seguir precisa ser feito apenas na primeira vez que o script é rodado.
    ##Store your password securely in R :D
    #keyring_create("Onacredentials")
    #key_set("ona", keyring = "Onacredentials")
 
-ona_respostas <- onaDownload(form_id, username, username, pass = "IIRSocial2020.")
+ona_respostas <- onaDownload(form_id, username, username, pass = "[Omitted]")
 #                             key_get("ona", keyring = "Onacredentials"))
 #keyring_lock("Onacredentials")
 
